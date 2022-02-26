@@ -9,6 +9,7 @@ const app = express();
 app.use(helmet());
 app.use(cors());
 app.use(router);
+app.use(express.static('public'));
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
