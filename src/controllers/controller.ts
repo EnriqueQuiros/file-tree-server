@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import directoryTree from 'directory-tree';
 
-
 const getPath = (path: string) => {
   const node = path || "";
   const slashedPath = node.replace(/~/g, '/');
